@@ -70,6 +70,7 @@ create table GESTIONSTOCK
 (
    IDSTOCK              integer unsigned not null auto_increment,
    IDGEST               integer unsigned not null,
+   CODEPRODUIT          integer unsigned not null,
    QUANTITE             integer unsigned not null,
    DATESTOCK            datetime,
    TYPEGEST             bool,
@@ -105,8 +106,8 @@ create table PHOTO
 /*==============================================================*/
 create table PRODUIT
 (
-   CODEPRODUIT          int(10) not null auto_increment ,
-   IDSTOCK              integer unsigned not null,
+   CODEPRODUIT          integer unsigned not null auto_increment ,
+   /*IDSTOCK              integer unsigned not null,*/
    IDCATEGORIE          integer unsigned not null,
    PRIX                 decimal(8,2) not null,
    QUANTITE             integer unsigned not null,
@@ -135,6 +136,9 @@ alter table FACTURE add constraint FK_EMETTRE foreign key (IDGEST)
 alter table GESTIONSTOCK add constraint FK_AJOURNER foreign key (IDGEST)
       references GESTIONNAIRE (IDGEST) on delete restrict on update restrict;
 
+alter table GESTIONSTOCK add constraint FK_ASSOCIER foreign key (CODEPRODUIT)
+      references PRODUIT (CODEPRODUIT) on delete restrict on update restrict;
+
 alter table LISTE_FACTURE add constraint FK_LISTE_FACTURE foreign key (CODEPRODUIT)
       references PRODUIT (CODEPRODUIT) on delete restrict on update restrict;
 
@@ -144,8 +148,5 @@ alter table LISTE_FACTURE add constraint FK_LISTE_FACTURE2 foreign key (IDFACTUR
 alter table PHOTO add constraint FK_LIER foreign key (CODEPRODUIT)
       references PRODUIT (CODEPRODUIT) on delete restrict on update restrict;
 
-alter table PRODUIT add constraint FK_ASSOCIER foreign key (IDCATEGORIE)
+alter table PRODUIT add constraint FK_ASSOCIATION foreign key (IDCATEGORIE)
       references CATEGORIE (IDCATEGORIE) on delete restrict on update restrict;
-
-alter table PRODUIT add constraint FK_STOCKER foreign key (IDSTOCK)
-      references GESTIONSTOCK (IDSTOCK) on delete restrict on update restrict;
