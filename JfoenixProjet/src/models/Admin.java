@@ -44,7 +44,10 @@ public class Admin{
     public String login(){
         
         String stringReturned="";
+        
+        //Chemin du fichier XML contenant les credentials de l'admin
         File xmlFile = new File("/home/veronne/Bureau/root.xml");
+        
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         try {
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();

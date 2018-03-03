@@ -27,7 +27,7 @@ public class DBManager {
     private static ResultSet result;
     private static PreparedStatement prepareStatement;
     
-    public Connection getConnexion() {
+    public static Connection getConnexion() {
         return connexion;
     }
 
@@ -51,7 +51,7 @@ public class DBManager {
         this.statement = statement;
     }
 
-    public ResultSet getResult() {
+    public static ResultSet getResult() {
         return result;
     }
 
