@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<username>Admin</username>
+    <user>
+        <username>Admin</username>
 	<password>Admin123456</password>
+    </user>    	
 </root>
