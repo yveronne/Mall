@@ -1,0 +1,16 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.rootPane{
+    -fx-background-color: #DDDDDD;
+}
+
+.cardPane{
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+}
+
+.topPane{
+    -fx-background-color: #46c0f3;
+}
