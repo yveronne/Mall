@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="149.0" prefWidth="250.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXTextField fx:id="qtefield" focusColor="#46c0f3" labelFloat="true" layoutX="57.0" layoutY="34.0" prefHeight="32.0" prefWidth="145.0" promptText="Quantity" unFocusColor="#46c0f3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="okbtn" layoutX="57.0" layoutY="104.0" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #46c0f3;" text="OK" textFill="WHITE" />
+      <JFXButton fx:id="cancelbtn" layoutX="142.0" layoutY="104.0" style="-fx-background-color: #46c0f3;" text="CANCEL" textFill="WHITE" />
+   </children>
+</AnchorPane>
