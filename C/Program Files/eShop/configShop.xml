@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<root>
+    <admin>Admin</admin>
+    <adminpwd>Admin123456</adminpwd>
+	
+    <bd>shopdb</bd>
+    <user>root</user>
+    <password></password>
+    <server>localhost</server>
+    <port>3306</port>
+	
+    <dossierphotos>http://localhost/eShop/photos/</dossierphotos>
+    <status>1</status>
+	
+	<magasin>Boutique eShop</magasin>
+	<addresse>eShop@gmail.com</addresse>
+	<telephone>698634451 / 678186600</telephone>
+	<lieu>Yaounde - Mokolo</lieu>
+	
+	<logo>http://localhost/eShop/logos/logo.png</logo>
+	<url>http://localhost/eShop/photos/upload.php</url>
+	
+	<impressionsFactures>C:/Program Files/eShop/Impressions_Factures_PDF/</impressionsFactures>
+	<impressionsProduits>C:/Program Files/eShop/Impressions_Produits_PDF/</impressionsProduits>
+	<impressionsStock>C:/Program Files/eShop/Impressions_Stock_PDF/</impressionsStock>
+</root>
