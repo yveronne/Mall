@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="1295.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HistoryBillingForRootController">
+   <center>
+      <AnchorPane fx:id="anchorRectangle" prefHeight="200.0" prefWidth="200.0" stylesheets="@../style/register.css" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle fx:id="rec" arcHeight="5.0" arcWidth="5.0" height="644.0" layoutX="-26.0" layoutY="-13.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" width="1323.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <effect>
+                  <DropShadow color="#511b1b" height="0.0" radius="0.0" width="0.0" />
+               </effect>
+            </Rectangle>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="45.0" prefWidth="1323.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="50.0" prefHeight="50.0" prefWidth="1273.0" style="-fx-alignment: center;" text="Historique facture" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <center>
+                  <VBox prefHeight="581.0" prefWidth="1323.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox prefHeight="23.0" prefWidth="1323.0">
+                           <children>
+                              <GridPane hgap="10.0" prefHeight="35.0" prefWidth="1324.0" vgap="10.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label prefHeight="35.0" prefWidth="153.0" style="-fx-alignment: center-right;" text="Numéro facture" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="35.0" prefWidth="152.0" style="-fx-alignment: center-right;" text="Mois" textFill="WHITE" GridPane.columnIndex="5">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="35.0" prefWidth="148.0" style="-fx-alignment: center-right;" text="Année" textFill="WHITE" GridPane.columnIndex="7">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField prefHeight="41.0" prefWidth="100.0" GridPane.columnIndex="1" />
+                                    <TextField prefHeight="41.0" prefWidth="100.0" GridPane.columnIndex="6" />
+                                    <TextField prefHeight="41.0" prefWidth="100.0" GridPane.columnIndex="8" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="150.0" right="150.0" />
+                                 </HBox.margin>
+                              </GridPane>
+                           </children>
+                        </HBox>
+                        <AnchorPane prefHeight="565.0" prefWidth="1023.0">
+                           <VBox.margin>
+                              <Insets left="150.0" right="150.0" top="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <Pagination prefHeight="491.0" prefWidth="1023.0" AnchorPane.bottomAnchor="72.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <TableView prefHeight="443.0" prefWidth="1023.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columns>
+                                    <TableColumn prefWidth="155.0" text="Numéro facture" />
+                                    <TableColumn prefWidth="345.0" text="Montant" />
+                                    <TableColumn prefWidth="224.0" text="Date" />
+                                    <TableColumn minWidth="0.0" prefWidth="285.0" text="Nom caissière" />
+                                 </columns>
+                              </TableView>
+                              <JFXButton layoutX="178.0" layoutY="491.0" prefHeight="44.0" prefWidth="149.0" style="-fx-background-color: #46c0f3;" text="Imprimer" textFill="WHITE" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="178.0">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="729.0" layoutY="491.0" prefHeight="44.0" prefWidth="149.0" style="-fx-background-color: #46c0f3;" text="Recette" textFill="WHITE" AnchorPane.bottomAnchor="28.0" AnchorPane.rightAnchor="178.0">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </children>
+         <styleClass>
+            <String fx:value="rootPane" />
+            <String fx:value="background" />
+         </styleClass>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="49.0" prefWidth="1192.0" styleClass="topPane" stylesheets="@../style/register.css" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="signoutbtn" focusTraversable="false" layoutX="737.0" layoutY="-1.0" onAction="#signout" prefHeight="44.0" prefWidth="52.0" text=" " AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="SIGN_OUT" size="25">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton focusTraversable="false" layoutX="-7.0" layoutY="3.0" prefHeight="54.0" prefWidth="160.0" style="-fx-background-color: #46c0f3;" text="Administrateur" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" size="20" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

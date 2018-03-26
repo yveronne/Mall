@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="464.0" prefWidth="388.0" style="-fx-background-color: #dddddd;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CategoryController">
+   <children>
+      <Label fx:id="succesLabel" layoutX="39.0" layoutY="420.0" prefHeight="30.0" prefWidth="196.0" />
+      <AnchorPane layoutX="25.0" layoutY="60.0" prefHeight="345.0" prefWidth="338.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <JFXListView fx:id="listcategories" layoutX="15.0" layoutY="67.0" prefHeight="264.0" prefWidth="313.0" />
+            <JFXTextField fx:id="categoryfield" focusColor="#46c0f3" labelFloat="true" layoutX="14.0" layoutY="23.0" prefHeight="31.0" prefWidth="224.0" promptText="Catégorie" unFocusColor="#46c0f3" />
+            <JFXButton fx:id="okbtn" layoutX="246.0" layoutY="23.0" onAction="#ok" prefHeight="31.0" prefWidth="83.0" style="-fx-background-color: #46c0f3;" text="Ajouter" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="cancelbtn" layoutX="244.0" layoutY="419.0" onAction="#cancel" prefHeight="31.0" prefWidth="117.0" style="-fx-background-color: #46c0f3;" text="Annuler" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="REPLY" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="101.0" layoutY="14.0" prefHeight="30.0" prefWidth="187.0" text="Liste des Catégories">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

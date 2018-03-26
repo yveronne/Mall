@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<root>
+    <admin>Admin</admin>
+    <adminpwd>Admin123456</adminpwd>
+    <bd>shopdb</bd>
+    <user>root</user>
+    <password></password>
+    <server>localhost</server>
+    <port>3306</port>
+    <dossierphotos>C:/wamp/www/eShop/</dossierphotos>
+    <status>1</status>
+</root>

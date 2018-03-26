@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="511.0" style="-fx-background-color: #dddddd;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.OperationController">
+   <children>
+      <Label fx:id="succesLabel" layoutX="14.0" layoutY="324.0" prefHeight="17.0" prefWidth="300.0" />
+      <AnchorPane layoutX="36.0" layoutY="62.0" prefHeight="146.0" prefWidth="440.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <JFXTextField fx:id="codeField" disable="true" focusColor="#46c0f3" labelFloat="true" layoutX="83.0" layoutY="32.0" prefHeight="32.0" prefWidth="123.0" unFocusColor="#46c0f3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXRadioButton fx:id="addrbtn" layoutX="220.0" layoutY="88.0" prefHeight="25.0" prefWidth="69.0" text="Ajouter">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="retrieverbtn" layoutX="330.0" layoutY="88.0" prefHeight="25.0" prefWidth="69.0" text="Retirer">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXTextField fx:id="qtefield" focusColor="#46c0f3" labelFloat="true" layoutX="234.0" layoutY="32.0" prefHeight="32.0" prefWidth="192.0" promptText="Quantité" unFocusColor="#46c0f3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="35.0" layoutY="33.0" prefHeight="30.0" prefWidth="48.0" text="Code">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="cancelbtn" layoutX="372.0" layoutY="221.0" onAction="#cancel" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: #46c0f3;" text="Annuler" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="REPLY" size="14" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="okbtn" layoutX="269.0" layoutY="221.0" onAction="#ok" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: #46c0f3;" text="Valider" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="PLUS_CIRCLE" size="14" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="36.0" layoutY="14.0" prefHeight="30.0" prefWidth="470.0" text="Ajouter un stock">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

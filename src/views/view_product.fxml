@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="780.0" style="-fx-background-color: #dddddd;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.View_productController">
+   <center>
+      <AnchorPane prefHeight="494.0" prefWidth="495.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="okbtn" layoutX="225.0" layoutY="489.0" onAction="#ok" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #46c0f3;" text="Ok" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CHECK" size="14" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="181.0" layoutY="-1.0" prefHeight="30.0" prefWidth="254.0" text="Détails du produit">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="11.0" layoutY="40.0" prefHeight="444.0" prefWidth="523.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+               <children>
+                  <JFXTextField fx:id="namefield" focusColor="#46c0f3" labelFloat="true" layoutX="133.0" layoutY="12.0" prefHeight="32.0" prefWidth="377.0" unFocusColor="#46c0f3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="pricefield" focusColor="#46c0f3" labelFloat="true" layoutX="135.0" layoutY="118.0" prefHeight="32.0" prefWidth="374.0" unFocusColor="#46c0f3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="vendorfield" focusColor="#46c0f3" labelFloat="true" layoutX="134.0" layoutY="172.0" prefHeight="32.0" prefWidth="375.0" promptText=" " unFocusColor="#46c0f3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <TextArea fx:id="descriptionfield" layoutX="134.0" layoutY="304.0" prefColumnCount="33" prefHeight="119.0" prefRowCount="3" prefWidth="376.0" wrapText="true" />
+                  <Label layoutX="13.0" layoutY="304.0" prefHeight="32.0" prefWidth="92.0" text="Description">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="234.0" prefHeight="31.0" prefWidth="77.0" text="Catégorie">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="23.0" prefHeight="28.0" prefWidth="41.0" text="Nom">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="categoriefield" focusColor="#46c0f3" labelFloat="true" layoutX="132.0" layoutY="234.0" prefHeight="32.0" prefWidth="379.0" unFocusColor="#46c0f3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="59.0" layoutY="124.0" prefHeight="17.0" prefWidth="30.0" text="Prix">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="174.0" prefHeight="27.0" prefWidth="101.0" text="Fournisseur">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="qtefield" focusColor="#46c0f3" labelFloat="true" layoutX="133.0" layoutY="68.0" prefHeight="32.0" prefWidth="377.0" unFocusColor="#46c0f3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="31.0" layoutY="72.0" prefHeight="29.0" prefWidth="67.0" text="Quantité">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <right>
+      <JFXListView fx:id="photoslist" prefHeight="494.0" prefWidth="240.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

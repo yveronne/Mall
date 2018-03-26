@@ -1,0 +1,22 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.rootPane{
+    -fx-background-color: #DDDDDD;
+}
+
+.cardPane{
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+}
+
+.topPane{
+    -fx-background-color: #46c0f3;
+}
+
+.background{
+    -fx-background-image: url("../statics/boutique.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+}
